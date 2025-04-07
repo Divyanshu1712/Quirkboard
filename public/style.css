@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+  }
+  
+  .toolbar {
+    background: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  #board {
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid #ddd;
+    cursor: crosshair;
+  }
+  
+  .cursor {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    transition: all 0.1s ease;
+  }
+  
+  .cursor span {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .form-box {
+    width: 300px;
+    margin: 120px auto;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .form-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+  }
+  
+  .form-box button {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  #toolbar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    background: #eee;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  #toolbar input[type=color] {
+    width: 40px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #toolbar input[type=range] {
+    width: 100px;
+  }
+  
+  #toolbar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #ddd;
+  }
+  
+  #toolbar button:hover {
+    background: #ccc;
+  }
+  
+  

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard Room</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <body>
+        <div id="toolbar">
+            <label>Color:</label>
+            <input type="color" id="colorPicker" value="#000000" placeholder="set colors">
+          
+            <label>Size:</label>
+            <input type="range" id="penSize" min="1" max="10" value="3" placeholder="adjust size">
+          
+            <button onclick="setTool('pen')">✏️ Pen</button>
+            <button onclick="setTool('eraser')">🧽 Eraser</button>
+            <button onclick="clearCanvas()">🧹 Clear</button>
+          </div>
+          <canvas id="board" width="800" height="600"></canvas>
+      
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+      </body>
+</body>
+</html>

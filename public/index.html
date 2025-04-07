@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Whiteboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-box">
+      <h2>Join a Room</h2>
+      <input type="text" id="roomId" placeholder="Room ID">
+      <input type="password" id="roomPass" placeholder="Password">
+      <button onclick="joinRoom()">Enter Room</button>
+    </div>
+  
+    <script>
+      function joinRoom() {
+        const roomId = document.getElementById('roomId').value.trim();
+        const roomPass = document.getElementById('roomPass').value.trim();
+        if (!roomId || !roomPass) return alert("Enter room ID and password");
+  
+        localStorage.setItem("roomId", roomId);
+        localStorage.setItem("roomPass", roomPass);
+        window.location.href = "whiteboard.html";
+      }
+    </script>
+  </body>
+</html>
